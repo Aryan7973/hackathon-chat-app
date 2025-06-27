@@ -11,7 +11,12 @@
 
 .div-nav{
   height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
 }
+
 .div-chat{
   height: 89.5%;
   display: flex;
@@ -22,4 +27,87 @@
 }
 .chats-div{
   width: 70%;
+}
+
+
+
+.popup{
+  margin: auto auto;
+  width: 30%;
+  padding: 1rem;
+}
+.close{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.h1-login{
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-box{
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.search-to{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem ;
+}
+
+.send-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+}
+.all-chat{
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+
+}
+.simulate-offline{
+  color:white;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: fit-content;
+  margin-right: 2px;
+}
+
+.send-box button{
+  height: 2rem;
+  margin: 0 2rem ;
+}
+
+
+.my-msg {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  padding: 6px 10px;
+  border-radius: 16px;
+  max-width: 70%;
+  margin: 0.2rem 0;
+}
+
+.their-msg {
+  align-self: flex-start;
+  background-color: #f1f0f0;
+  padding: 6px 10px;
+  border-radius: 16px;
+  max-width: 70%;
+  margin: 0.2rem 0;
 }
