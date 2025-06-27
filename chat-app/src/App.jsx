@@ -178,11 +178,15 @@ import { useEffect } from 'react';
                     </div>
                     <div className='chats-div border'>
                         <div className='all-chat border'>
-                            {history && history.map((msg, index) => (
-                              <div key={index} className={msg.from === user ? 'my-msg' : 'their-msg'}>
-                                <strong>{msg.from}</strong>: {msg.text}
-                              </div>
-                            ))}
+                            {currentChat ? (
+                              history.map((msg, index) => (
+                                <div key={index} className={msg.from === user ? 'my-msg' : 'their-msg'}>
+                                  <strong>{msg.from}</strong>: {msg.text}
+                                </div>
+                              ))
+                            ) : (
+                              <div className="no-chat-selected">Start chatting with someone to see messages here.</div>
+                            )}
                             <div ref={bottomRef} />
                         </div>
                         <div className='send-box border'>
