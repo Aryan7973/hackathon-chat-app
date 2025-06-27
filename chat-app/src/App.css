@@ -1,0 +1,25 @@
+.border{
+  border: 1px solid black;
+}
+
+.main-div{
+  width: 90vw;
+  height: 95vh;
+  margin: auto auto;
+
+}
+
+.div-nav{
+  height: 10%;
+}
+.div-chat{
+  height: 89.5%;
+  display: flex;
+}
+
+.users-div{
+  width: 30%;
+}
+.chats-div{
+  width: 70%;
+}
